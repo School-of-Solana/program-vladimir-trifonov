@@ -1,0 +1,178 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Twitter-like styling */
+.tweet-form {
+  background: white;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.tweet-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: vertical;
+  font-size: 16px;
+  font-family: inherit;
+  margin-bottom: 10px;
+}
+
+.tweet-input::placeholder {
+  color: #657786;
+}
+
+.tweet-button {
+  background: #1da1f2;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.tweet-button:disabled {
+  background: #8899a6;
+  cursor: not-allowed;
+}
+
+.tweet {
+  background: white;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.tweet-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tweet-author {
+  font-weight: bold;
+  color: #14171a;
+  margin-right: 8px;
+}
+
+.tweet-time {
+  color: #657786;
+  font-size: 14px;
+}
+
+.tweet-content {
+  color: #14171a;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.tweet-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  color: #657786;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.action-button:hover {
+  background: #f7f9fa;
+}
+
+.action-button.liked {
+  color: #1da1f2;
+}
+
+.action-button.disliked {
+  color: #e0245e;
+}
+
+.wallet-info {
+  background: white;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.wallet-button {
+  background: #1da1f2;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.error-message {
+  background: #ffe6e6;
+  color: #cc0000;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.success-message {
+  background: #e6f7ff;
+  color: #0050b3;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #657786;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
